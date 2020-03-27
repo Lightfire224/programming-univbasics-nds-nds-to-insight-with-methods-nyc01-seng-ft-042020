@@ -16,7 +16,7 @@ def directors_totals(nds)
   director_number = 0
   while director_number < nds.length do
     hash[nds[director_number][:name]] = gross_for_director(directors_database[director_number])
-    director_i += 1
+    director_number += 1
   end
  hash
 end
