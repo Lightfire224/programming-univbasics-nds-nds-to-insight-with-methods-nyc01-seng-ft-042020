@@ -2,13 +2,13 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 def gross_for_director(director_data)
-  integer=0
-  i = 0
-  while i < director_data[:movies].length do
-  integer += director_data[:movies][i][:worldwide_gross]
-  i += 1
+  total=0
+  counter = 0
+  while counter < director_data[:movies].length do
+    total += director_data[:movies][i][:worldwide_gross]
+    i += 1
   end
- integer
+ total
 end
 
 # Write a method that, given an NDS creates a new Hash
